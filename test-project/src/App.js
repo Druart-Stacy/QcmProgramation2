@@ -226,25 +226,25 @@ const questions = [
     correctAnswer: 'B. La sécurité des API implique de protéger les interfaces de programmation contre les accès non autorisés et les attaques. Les meilleures pratiques incluent l utilisation de l authentification et de l autorisation (comme OAuth), le chiffrement des données en transit (TLS), la validation des entrées pour éviter les injections SQL, et la gestion des erreurs de manière sécurisée.',
   },
   {
-    questionText: 'Q32: ',
-    options: ['A. ', 
-              'B. ', 
-              'C. '],
-    correctAnswer: '',
+    questionText: 'Q32: Qu est-ce que la commande git rebase et comment diffère-t-elle de git merge ?',
+    options: ['A. ***', 
+              'B. La commande git rebase permet de déplacer ou de combiner une séquence de commits sur une autre branche. Contrairement à git merge, qui crée un commit de fusion pour combiner les modifications de deux branches, git rebase applique les commits d'une branche sur la branche cible de manière linéaire. Cela peut rendre l'historique plus propre, mais peut entraîner des conflits qui doivent être résolus au fur et à mesure du processus de rebasage. ', 
+              'C. ***'],
+    correctAnswer: 'B. La commande git rebase permet de déplacer ou de combiner une séquence de commits sur une autre branche. Contrairement à git merge, qui crée un commit de fusion pour combiner les modifications de deux branches, git rebase applique les commits d'une branche sur la branche cible de manière linéaire. Cela peut rendre l'historique plus propre, mais peut entraîner des conflits qui doivent être résolus au fur et à mesure du processus de rebasage.',
   },
   {
-    questionText: 'Q33: ',
-    options: ['A. ', 
+    questionText: 'Q33: Qu'est-ce qu'un "cherry-pick" en Git ? ',
+    options: ['A. La commande git cherry-pick permet d'appliquer un commit spécifique d'une branche à une autre. Cela peut être utile pour intégrer des modifications spécifiques sans fusionner toute la branche source.  ', 
               'B. ', 
               'C. '],
-    correctAnswer: '',
+    correctAnswer: 'A. La commande git cherry-pick permet d'appliquer un commit spécifique d'une branche à une autre. Cela peut être utile pour intégrer des modifications spécifiques sans fusionner toute la branche source. ',
   },
   {
-    questionText: 'Q34: ',
+    questionText: 'Q34: Qu'est-ce que le "git bisect" et comment l'utiliser pour trouver un bug ?',
     options: ['A. ', 
               'B. ', 
-              'C. '],
-    correctAnswer: '',
+              'C. La commande git bisect est utilisée pour identifier le commit spécifique où un bug a été introduit. Git utilise une recherche binaire pour diviser l'historique en morceaux plus petits et tester chaque morceau pour isoler le commit problématique.'],
+    correctAnswer: 'C.La commande git bisect est utilisée pour identifier le commit spécifique où un bug a été introduit. Git utilise une recherche binaire pour diviser l'historique en morceaux plus petits et tester chaque morceau pour isoler le commit problématique.',
   },
   {
     questionText: 'Q35: ',
@@ -413,4 +413,4 @@ function App() {
 export default App;
 
 // ajouter la possibilité de voir les bonnes et mauvaises réponse
-//afficher image Larmeléo qui pleurs et message d'encouragement en cas d'echec 
+//afficher image Larmeléo qui pleurs et message d'encouragement en cas d'echec  
