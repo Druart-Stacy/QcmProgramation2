@@ -1,0 +1,57 @@
+/* Styles généraux pour l'application */
+.App {
+  text-align: center;
+}
+
+/* Style pour le logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Style pour l'en-tête */
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Couleur du lien */
+.App-link {
+  color: #61dafb;
+}
+
+/* Animation du logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation du logo selon les préférences de réduction du mouvement */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Styles pour les écrans de téléphones mobiles en portrait */
+@media only screen and (max-width: 600px) {
+  .App-header {
+    background-color: lightblue; /* Fond bleu clair pour les téléphones mobiles */
+  }
+}
+
+/* Styles pour les écrans de PC (grande largeur) */
+@media only screen and (min-width: 601px) {
+  .App-header {
+    background-color: pink; /* Fond rose pour les écrans de PC */
+  }
+}
