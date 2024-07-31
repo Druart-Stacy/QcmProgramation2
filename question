@@ -3,18 +3,8 @@ INSERT INTO `questions` (`id`, `question`, `correct_answer`) VALUES
 
 
 
-(14, 'Q14: ', ''),
-(15, 'Q15: ', ''),
-(16, 'Q16: ', ''),
-(17, 'Q17: ', ''),
-(18, 'Q18: Que veut dire HTML ?', ''),
-(19, 'Q19: *** ?', ''),
-(20, 'Q19: Que veut dire POO?', ''),
-(21, 'Q20:  Question 2: Qu est-ce que PHP ‘PEAR?', ''),
-(22, 'Q21: Pourquoi utilise-t-on le langage PHP ?', ''),
-(23, 'Q22: quelle sont les types d erreur en PHP ?', ''),
-(24, 'Q23: Quelle est la différence entre «==» et «===» en php ?', ''),
-(25, 'Q19: Que veut dire POO?', ''),
+
+
 (26, 'Q20:  Question 2: Qu est-ce que PHP ‘PEAR?', ''),
 (27, 'Q21: Pourquoi utilise-t-on le langage PHP ?', ''),
 (28, 'Q22: quelle sont les types d erreur en PHP ?', ''),
@@ -75,26 +65,5 @@ CREATE TABLE IF NOT EXISTS `reponses` (
 (50, 17, 'B. ***', 1),
 (51, 17, 'C. ***', 0),
 
-(52, 18, 'A. HyperText Markup Language', 1),
-(53, 18, 'B. HyperText Marketing Language', 0),
-(54, 18, 'C. sa veux rien dire', 0),
 
-(55, 19, 'A. programmation objet obsolete', 0),
-(56, 19, 'B. programmation orientée objet', 1),
-(57, 19, 'C. programme orientée objet', 0),
-
-(58, 20, 'A. la réponse A', 0),
-(59, 20, 'B. Poire', 0),
-(60, 20, 'C. C est une extension du langage PHP lui-même.«Extension PHP et référentiel d applications».', 1),
-
-(61, 21, 'A. Pour te faire parler ,sa a fonctionner', 0),
-(62, 21, 'B. Créer, écrire,chiffrer des données', 1),
-
-(63, 22, 'A. les exceptions et les erreurs d exécution', 0),
-(64, 22, 'B. les erreurs de syntaxe et les erreurs de logique', 0),
-(65, 22, 'C. les avis, les avertissements et les erreurs fatales', 1),
-
-(66, 23, 'A. «==» compare uniquement les valeurs, tandis que «===» compare les valeurs et les types', 1),
-(67, 23, 'B. «==» compare les valeurs et les types, tandis que «===» compare uniquement les valeurs', 0),
-(68, 23, 'C. «==» compare les références des objets, tandis que «===» compare les valeurs des objets', 0);
 COMMIT;

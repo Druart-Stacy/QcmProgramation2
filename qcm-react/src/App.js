@@ -53,9 +53,9 @@ const questions = [
     correctAnswer: 'A. Sa veux dire que c’est un language plus près du language humain',
   },
   {
-    questionText: ' ',
-    options: ['', '', '”'],
-    correctAnswer: '',
+    questionText: 'Q9: Que veut dire SEM?',
+    options: ['A. Structural Equation Modeling', 'B. Scanning Electron Microscope', 'C. Search Engine Marketing'],
+    correctAnswer: 'C. Search Engine Marketing',
   },
   {
     questionText: 'Q10: Quelle sont les language de haut niveau parmis ceux-là?',
@@ -64,42 +64,86 @@ const questions = [
   },
   {
     questionText: 'Q11: Que veux dire include en PHP?',
-    options: ['', '', '”'],
-    correctAnswer: '',
+    options: ['A. Importer le contenu d’un fichier dans un script courant','B. Exporter le contenu d’un fichier dans un script courant','C.C’est une balise HTML ' ],
+    correctAnswer: 'A. Importer le contenu d’un fichier dans un script courant',
   },
   {
-    questionText: 'Q12: Quel est la différence entre HTML CSS et JavaScript?',
-    options: ['', '', '”'],
-    correctAnswer: '',
+    questionText: 'Q12: Le quel de ces language est Backend?',
+    options: ['A. Java', 'B. JavaScript ', 'C. CSS'],
+    correctAnswer: 'A. Java',
   },
   {
-    questionText: 'Q13: Le quel de ces language est Backend?',
-    options: ['', '', '”'],
-    correctAnswer: '',
+    questionText: 'Q13:Quel est la différence entre HTML CSS et JavaScript? ',
+    options: ['A.HTML et JavaScript sont des language de balisage tanti que CSS un language de programation ', 'B.JavaScript et CSS sont des language de balisage tanti que HTML un language de programation', 'C.HTML et CSS sont des language de balisage tanti que Javascript un language de programation '],
+    correctAnswer: 'C.HTML et CSS sont des language de balisage tanti que Javascript un language de programation ',
   },
   {
-    questionText: '',
-    options: ['', '', '”'],
-    correctAnswer: '',
+    questionText: 'Q14: Quel est la diference entre SEO et SEA?',
+    options: ['', 
+      'B. Le SEO (Search Engine Optimization) est l optimisation d un site web pour les moteurs de recherche, visant à améliorer son classement dans les résultats naturels (organiques). Le SEA (Search Engine Advertising) concerne les annonces payantes qui apparaissent en premier dans les résultats des moteurs de recherche.', 
+      '”'],
+    correctAnswer: 'Le SEO (Search Engine Optimization) est l optimisation d un site web pour les moteurs de recherche, visant à améliorer son classement dans les résultats naturels (organiques). Le SEA (Search Engine Advertising) concerne les annonces payantes qui apparaissent en premier dans les résultats des moteurs de recherche.',
+  },
+  {
+    questionText: 'Q15: Quelle est la différence entre les méthodes GET et POST dans une requête HTTP ?',
+    options: ['GET : Utilisée uniquement pour télécharger des fichiers depuis un serveur. Les données ne peuvent pas être envoyées avec cette méthode.POST : Utilisée uniquement pour télécharger des images depuis un serveur. Les données ne peuvent pas être envoyées avec cette méthode.', 
+      'GET : Utilisée pour envoyer des données au serveur, souvent pour soumettre des formulaires. Les paramètres sont envoyés dans le corps de la requête.POST : Utilisée pour récupérer des données d un serveur. Les paramètres sont envoyés dans l URL de la requête.', 
+      'C. GET : Utilisée pour récupérer des données d un serveur. Les paramètres sont envoyés dans l URL de la requête ,POST : Utilisée pour envoyer des données au serveur, souvent pour soumettre des formulaires. Les paramètres sont envoyés dans le corps de la requête.'],
+
+    correctAnswer:  'C. GET : Utilisée pour récupérer des données d un serveur. Les paramètres sont envoyés dans l URL de la requête ,POST : Utilisée pour envoyer des données au serveur, souvent pour soumettre des formulaires. Les paramètres sont envoyés dans le corps de la requête.'
+
+  },
+  {
+    questionText: 'Q16: Quelle est la différence entre une base de données SQL et NoSQL ?',
+    options: ['SQL : Utilise des fichiers texte pour stocker les données et ne nécessite pas de langage de requête particulier. Exemples : JSON, XML. NoSQL : Utilise uniquement des tables structurées avec des lignes et des colonnes, tout comme les bases de données SQL. Exemples : MySQL, PostgreSQL.', 
+      'SQL : Utilise des tables structurées avec des lignes et des colonnes et le langage SQL pour gérer les données. Exemples : MySQL, PostgreSQL.NoSQL : Utilise des structures de données flexibles comme les documents, les graphes, les colonnes, ou les clés-valeurs. Exemples : MongoDB, Cassandra.',
+      'SQL : Utilise un langage de programmation comme Python pour gérer les données. Exemples : SQLite, Oracle.NoSQL : Utilise des fichiers audio pour stocker les données. Exemples : MP3, WAV.'],
+    correctAnswer: 'SQL : Utilise des tables structurées avec des lignes et des colonnes et le langage SQL pour gérer les données. Exemples : MySQL, PostgreSQL.NoSQL : Utilise des structures de données flexibles comme les documents, les graphes, les colonnes, ou les clés-valeurs. Exemples : MongoDB, Cassandra.',
+  },
+  {
+    questionText: 'Q17: Qu est-ce que l AJAX et comment fonctionne-t-il ?',
+    options: ['A. AJAX (Asynchronous JavaScript and XML) est une technique de développement web qui permet de mettre à jour des parties d une page web sans recharger la page entière. Elle utilise JavaScript pour envoyer des requêtes HTTP asynchrones et recevoir des données en arrière-plan.', 
+      'AJAX (Automatic JavaScript and XML) est une technique qui permet de charger une page entière à chaque interaction utilisateur. Elle utilise JavaScript pour envoyer des requêtes HTTP synchrones et recharger la page entière chaque fois qu une nouvelle donnée est requise.', 
+      'AJAX (Automated JavaScript and XML) est une technique qui permet de convertir automatiquement du texte en images. Elle utilise JavaScript pour transformer les données textuelles en fichiers image que le navigateur peut afficher.'],
+    correctAnswer: 'A. AJAX (Asynchronous JavaScript and XML) est une technique de développement web qui permet de mettre à jour des parties d une page web sans recharger la page entière. Elle utilise JavaScript pour envoyer des requêtes HTTP asynchrones et recevoir des données en arrière-plan.',
+  },
+  {
+    questionText: 'Q18: Que veut dire HTML ?',
+    options: ['A. HyperText Markup Language', 'B. HyperText Marketing Language', 'C. sa veux rien dire'],
+    correctAnswer: 'A. HyperText Markup Language',
+  },
+  {
+    questionText: 'Q19: Que veut dire POO?',
+    options: ['A. programmation objet obsolete', 'B. programmation orientée objet', 'C. programme orientée objet'],
+    correctAnswer: 'B. programmation orientée objet',
+  },
+  {
+    questionText: 'Q20:  Question 2: Qu est-ce que PHP ‘PEAR?',
+    options: ['A. la réponse A', 'B. Poire', 'C. C est une extension du langage PHP lui-même.«Extension PHP et référentiel d applications».'],
+    correctAnswer: 'C. C est une extension du langage PHP lui-même.«Extension PHP et référentiel d applications».',
+  },
+  {
+    questionText: 'Q21: Pourquoi utilise-t-on le langage PHP ?',
+    options: ['A. Pour te faire parler ,sa a fonctionner', 'B. Créer, écrire,chiffrer des données', '”'],
+    correctAnswer: 'B. Créer, écrire,chiffrer des données',
+  },
+  {
+    questionText: 'Q22: quelle sont les types d erreur en PHP ?',
+    options: ['A. les exceptions et les erreurs d exécution', 'B. les erreurs de syntaxe et les erreurs de logique', 'C. les avis, les avertissements et les erreurs fatales'],
+    correctAnswer: 'C. les avis, les avertissements et les erreurs fatales',
+  },
+  {
+    questionText: 'Q23: Quelle est la différence entre «==» et «===» en php ?',
+    options: ['A. «==» compare uniquement les valeurs, tandis que «===» compare les valeurs et les types', 
+      'B. «==» compare les valeurs et les types, tandis que «===» compare uniquement les valeurs', 
+      'C. «==» compare les références des objets, tandis que «===» compare les valeurs des objets'],
+    correctAnswer: 'A. «==» compare uniquement les valeurs, tandis que «===» compare les valeurs et les types',
   },
 
-  
+// question a ajouter  
 
 
 
-
-
-(31, 11, 'A. Importer le contenu d’un fichier dans un script courant', 1),
-(32, 11, 'B. Exporter le contenu d’un fichier dans un script courant', 0),
-(33, 11, 'C.C’est une balise HTML ', 0),
-
-(34, 12, 'A.HTML et JavaScript sont des language de balisage tanti que CSS un language de programation ', 0),
-(35, 12, 'B.JavaScript et CSS sont des language de balisage tanti que HTML un language de programation', 0),
-(36, 12, 'C.HTML et CSS sont des language de balisage tanti que Javascript un language de programation ', 1),
-
-(37, 13, 'A. Java', 1),
-(38, 13, 'B. JavaScript ', 0),
-(39, 13, 'C. CSS', 0),
 
   // Ajoutez plus de questions ici
 ];
