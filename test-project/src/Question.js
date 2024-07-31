@@ -1,18 +1,19 @@
+// Question.js
 import React from 'react';
 
-function Question({ question, onAnswerClick }) {
+const Question = ({ question, onAnswerClick }) => {
   return (
-    <div>
+    <div className="question-container">
       <h2>{question.questionText}</h2>
-      <ul>
+      <div className="options-container">
         {question.options.map((option, index) => (
-          <li key={index} onClick={() => onAnswerClick(option)}>
+          <button key={index} className="option" onClick={() => onAnswerClick(option)}>
             {option}
-          </li>
+          </button>
         ))}
-      </ul>
+      </div>
     </div>
   );
-}
+};
 
 export default Question;
