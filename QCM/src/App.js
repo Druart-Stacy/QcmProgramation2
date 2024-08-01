@@ -1,7 +1,8 @@
-// App.js
 import React, { useState } from 'react';
 import Question from './Question';
 import './App.css';
+import tristeImage from './img/larmeleon.png'; // Importez votre image
+import felicitationImage from './img/arceus.jpg'; // Importez votre image
 
 const questions = [
   {
@@ -254,11 +255,11 @@ const questions = [
     correctAnswer: '',
   },
   {
-    questionText: 'Q36: ',
-    options: ['A. ', 
-              'B. ', 
-              'C. '],
-    correctAnswer: '',
+    questionText: 'Q36:Qu est-ce que Django et quelles sont ses principales fonctionnalités ? ',
+    options: ['A. *** ', 
+              'B. Django est un framework web open-source pour le langage Python, conçu pour simplifier la création de sites web dynamiques et complexes. Ses principales fonctionnalités incluent une ORM (Object-Relational Mapping) pour interagir avec les bases de données, un système de routage des URL, un moteur de templates pour générer des pages HTML, des outils de gestion de formulaires, et un système d authentification intégré. Django suit le principe "Don"t Repeat Yourself" (DRY) et vise à accélérer le développement tout en favorisant des pratiques de code propres et réutilisables.', 
+              'C. *** '],
+    correctAnswer: 'B. Django est un framework web open-source pour le langage Python, conçu pour simplifier la création de sites web dynamiques et complexes. Ses principales fonctionnalités incluent une ORM (Object-Relational Mapping) pour interagir avec les bases de données, un système de routage des URL, un moteur de templates pour générer des pages HTML, des outils de gestion de formulaires, et un système d authentification intégré. Django suit le principe "Don"t Repeat Yourself" (DRY) et vise à accélérer le développement tout en favorisant des pratiques de code propres et réutilisables.',
   },
   {
     questionText: 'Q37: ',
@@ -275,11 +276,11 @@ const questions = [
     correctAnswer: '',
   },
   {
-    questionText: 'Q39: ',
+    questionText: 'Q39: Comment installer Django',
     options: ['A. ', 
               'B. ', 
-              'C. '],
-    correctAnswer: '',
+              'C. Pour installer Django, tu peux utiliser pip, le gestionnaire de paquets Python. Exécute la commande pip install django'],
+    correctAnswer: 'C. Pour installer Django, tu peux utiliser pip, le gestionnaire de paquets Python. Exécute la commande pip install django',
   },
   {
     questionText: 'Q40: ',
@@ -289,32 +290,25 @@ const questions = [
     correctAnswer: '',
   },
   {
-    questionText: 'Q41: ',
+    questionText: 'Q41:Que fait la commende onkeypress ',
+    options: ['A. ***', 
+              'B. Elle permet de déclencer une action par le clic', 
+              'C. ***'],
+    correctAnswer: 'B. Elle permet de déclencer une action par le clic',
+  },
+  {
+    questionText: 'Q42:Quel est la difference entre un site dynamique et un site statique? ',
     options: ['A. ', 
               'B. ', 
               'C. '],
     correctAnswer: '',
   },
   {
-    questionText: 'Q41: ',
-    options: ['A. ', 
-              'B. ', 
-              'C. '],
-    correctAnswer: '',
-  },
-  {
-    questionText: 'Q42: ',
-    options: ['A. ', 
-              'B. ', 
-              'C. '],
-    correctAnswer: '',
-  },
-  {
-    questionText: 'Q43: ',
-    options: ['A. ', 
-              'B. ', 
-              'C. '],
-    correctAnswer: '',
+    questionText: 'Q43: Quelle est la structure typique d un script PHP ? ',
+    options: ['A.*** ', 
+              'B. <?php echo "Bonjour, monde!"; ?> ', 
+              'C. ***'],
+    correctAnswer: 'B. <?php echo "Bonjour, monde!"; ?> ',
   },
   {
     questionText: 'Q44: ',
@@ -368,49 +362,79 @@ const questions = [
 ]
 
 function App() {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
-  const [quizEnded, setQuizEnded] = useState(false);
+  const [showScore, setShowScore] = useState(false);
 
-  const handleAnswerOptionClick = (selectedOption) => {
-    if (selectedOption === questions[currentQuestionIndex].correctAnswer) {
-      setScore(prevScore => prevScore + 1);
+  const handleAnswerOptionClick = (answer) => {
+    const correctAnswer = questions[currentQuestion].correctAnswer;
+
+    // Check if the answer is correct (handle multiple correct answers)
+    if (Array.isArray(correctAnswer)) {
+      if (correctAnswer.includes(answer)) {
+        setScore(score + 1);
+      }
+    } else if (answer === correctAnswer) {
+      setScore(score + 1);
     }
 
-    const nextQuestionIndex = currentQuestionIndex + 1;
-
-    if (nextQuestionIndex < questions.length) {
-      setCurrentQuestionIndex(nextQuestionIndex);
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
     } else {
-      setQuizEnded(true);
+      setShowScore(true);
     }
   };
 
-  if (quizEnded) {
-    return (
-      <div className="container">
-        <div className="App">
-          <h1>QCM React</h1>
-          <p>Quiz terminé ! Votre score est de {score}/{questions.length}</p>
-        </div>
-      </div>
-    );
-  }
+  const getScoreMessage = () => {
+    if (score >= 35) {
+      return {
+        message: 'Félicitations ! Vous avez bien réussi.',
+        image: felicitationImage,
+      };
+    } else if (score >= 25) {
+      return {
+        message: 'Bonne moyenne ! Vous pouvez encore vous améliorer.',
+        image: '', // You can choose an appropriate image for this case
+      };
+    } else {
+      return {
+        message: 'Essayez encore ! Vous pouvez faire mieux.',
+        image: tristeImage,
+      };
+    }
+  };
+
+  const { message, image } = getScoreMessage();
 
   return (
-    <div className="container">
-      <div className="App">
-        <h1>QCM React</h1>
-        <Question
-          question={questions[currentQuestionIndex]}
-          onAnswerClick={handleAnswerOptionClick}
-        />
-      </div>
+    <div className='app'>
+      {showScore ? (
+        <div className='score-section'>
+          <h1>Vous avez complété le quiz!</h1>
+          <p>Votre score est de {score} sur {questions.length}.</p>
+          <p>{message}</p>
+          {image && <img src={image} alt="Score" />}
+        </div>
+      ) : (
+        <>
+          <div className='question-section'>
+            <div className='question-count'>
+              <span>Question {currentQuestion + 1}</span>/{questions.length}
+            </div>
+            <div className='question-text'>{questions[currentQuestion].questionText}</div>
+          </div>
+          <div className='answer-section'>
+            {questions[currentQuestion].options.map((option) => (
+              <button onClick={() => handleAnswerOptionClick(option)} key={option}>
+                {option}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
 
 export default App;
-
-// ajouter la possibilité de voir les bonnes et mauvaises réponse
-//afficher image Larmeléo qui pleurs et message d'encouragement en cas d'echec  
