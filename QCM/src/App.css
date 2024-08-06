@@ -55,3 +55,29 @@
     background-color: pink; /* Fond rose pour les écrans de PC */
   }
 }
+.questionnaire {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.reponse {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.bonne {
+  color: green;
+}
+
+.mauvaise {
+  color: red;
+}
+
+.correcte {
+  color: green;
+  font-weight: bold;
+}
