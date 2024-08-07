@@ -1,20 +1,15 @@
-// src/HomePage.js
 import React from 'react';
-import useHistory  from './App';
+import { Link } from 'react-router-dom'; // Import Link
+
 
 const HomePage = () => {
-  const history = useHistory();
-
-  const startQuestionnaire = () => {
-    history.push('/questionnaire');
-  };
-
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Bienvenue sur notre site</h1>
-      <button onClick={startQuestionnaire} style={{ padding: '10px 20px', fontSize: '16px' }}>
-        Commencer le questionnaire
-      </button>
+    <div>
+      <h1>Bienvenue sur la page d'accueil</h1>
+      <p>Ceci est la page d'accueil de l'application.</p>
+      <Link to="../src/Questionnaire.js">
+        <button>Back to Quiz</button>
+      </Link>
     </div>
   );
 };
