@@ -1,15 +1,17 @@
+// HomePage.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
-
+import Button from './Button'; // Assurez-vous que le chemin est correct
 
 const HomePage = () => {
+  // Définir la fonction handleClick
+  const handleClick = () => {
+    alert('Bouton cliqué !');
+  };
+
   return (
     <div>
       <h1>Bienvenue sur la page d'accueil</h1>
-      <p>Ceci est la page d'accueil de l'application.</p>
-      <Link to="../src/Questionnaire.js">
-        <button>Back to Quiz</button>
-      </Link>
+      <Button label="Cliquez ici" onClick={handleClick} />
     </div>
   );
 };
