@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import Question from './Question';
 import './App.css';
-import tristeImage from './img/larmeleon.png'; // Importez votre image
-import felicitationImage from './img/arceus.jpg'; // Importez votre image
-
-
-
+import tristeImage from './img/larmeleon.png'; // Importez image
+import bonnemoyenne from './img/porigon2.jpg';// Importez image
+import felicitationImage from'./img/mackognieur.png';// Importez image
+import legendeImage from './img/arceus.jpg'; // Importez image
+import index from './HomePage';
 
 const questions = [
   {
@@ -296,7 +296,7 @@ const questions = [
     questionText: 'Que fait la commende onkeypress ',
     options: ['A. L attribut onkeypress exécute une fonction JavaScript chaque fois qu une touche est enfoncée et maintenue, avant qu elle ne soit relâchée.' ,
               'B. Elle permet de déclencer une action par le clic', 
-              'C. ***la répose c'],
+              'C. la répose c'],
     correctAnswer: 'B. Elle permet de déclencer une action par le clic',
   },
   {
@@ -390,16 +390,25 @@ function App() {
   };
 
   const getScoreMessage = () => {
-    if (score >= 35) {
+    if (score == 50) {
+      return {
+        message: 'Félicitations ! Vous êtes une lengende.',
+        image: legendeImage,
+      };
+
+    } else if (score >= 35 && score<=49) {
       return {
         message: 'Félicitations ! Vous avez bien réussi.',
-        image: felicitationImage,
+        image: felicitationImage, 
+      
       };
-    } else if (score >= 25) {
+    } else if (score >= 25 && score <=34) {
       return {
         message: 'Bonne moyenne ! Vous pouvez encore vous améliorer.',
-        image: '', // You can choose an appropriate image for this case
+        image: bonnemoyenne, 
+      
       };
+  
     } else {
       return {
         message: 'Essayez encore ! Vous pouvez faire mieux.',
