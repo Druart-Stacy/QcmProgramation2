@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import Question from './Question';
 import './App.css';
-import tristeImage from './img/larmeleon.png'; // Importez image
-import bonnemoyenne from './img/porigon2.jpg';// Importez image
-import felicitationImage from'./img/mackognieur.png';// Importez image
-import legendeImage from './img/arceus.jpg'; // Importez image
-import index from './HomePage';
-
+import tristeImage from './img/larmeleon.png';
+import bonnemoyenne from './img/porigon2.jpg';
+import felicitationImage from './img/mackognieur.png';
+import legendeImage from './img/arceus.jpg';
 const questions = [
   {
     questionText: 'Qu’ est-ce que JavaScript?',
@@ -308,7 +306,7 @@ const questions = [
   },
   {
     questionText: 'Quelle est la structure typique d un script PHP ? ',
-    options: ['A. <?php echo "Bonjour, monde!"; ?> ', 
+    options: ['A. <?php echau "Bonjour, monde!"; ?> ', 
               'B. <?php echo "Bonjour, monde!"; ?> ', 
               'C. <?php print("Bonjour, monde!"); ?>'],
     correctAnswer: 'B. <?php echo "Bonjour, monde!"; ?> ',
@@ -363,21 +361,13 @@ const questions = [
     correctAnswer: 'B. Une boucle "for" est utilisée pour un nombre défini d itérations, tandis qu une boucle "while" est utilisée pour un nombre indéfini d itérations',
   },
 ]
-
-function App() {
+const App = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
 
-  const handleAnswerOptionClick = (answer) => {
-    const correctAnswer = questions[currentQuestion].correctAnswer;
-
-    // Check if the answer is correct (handle multiple correct answers)
-    if (Array.isArray(correctAnswer)) {
-      if (correctAnswer.includes(answer)) {
-        setScore(score + 1);
-      }
-    } else if (answer === correctAnswer) {
+  const handleAnswerOptionClick = (isCorrect) => {
+    if (isCorrect) {
       setScore(score + 1);
     }
 
@@ -389,56 +379,40 @@ function App() {
     }
   };
 
-  const getScoreMessage = () => {
-    if (score == 50) {
-      return {
-        message: 'Félicitations ! Vous êtes une lengende.',
-        image: legendeImage,
-      };
+  const getResultImage = () => {
+    const scorePercentage = (score);
+    if (scorePercentage <= 24) {
+      return tristeImage;
+    } else if (scorePercentage >25 && scorePercentage <= 50) {
+      return bonnemoyenne;
+    } else if (scorePercentage <51 && scorePercentage <= 75) {
+      return felicitationImage;
 
-    } else if (score >= 35 && score<=49) {
-      return {
-        message: 'Félicitations ! Vous avez bien réussi.',
-        image: felicitationImage, 
-      
-      };
-    } else if (score >= 25 && score <=34) {
-      return {
-        message: 'Bonne moyenne ! Vous pouvez encore vous améliorer.',
-        image: bonnemoyenne, 
-      
-      };
-  
     } else {
-      return {
-        message: 'Essayez encore ! Vous pouvez faire mieux.',
-        image: tristeImage,
-      };
+      return legendeImage;
     }
   };
 
-  const { message, image } = getScoreMessage();
-
   return (
-    <div className='app'>
+    <div className="app">
       {showScore ? (
-        <div className='score-section'>
-          <h1>Vous avez complété le quiz!</h1>
-          <p>Votre score est de {score} sur {questions.length}.</p>
-          <p>{message}</p>
-          {image && <img src={image} alt="Score" />}
+        <div className="score-section">
+          Vous avez marqué {score} sur {questions.length}
+          <img src={getResultImage()} alt="Result" />
         </div>
       ) : (
         <>
-          <div className='question-section'>
-            <div className='question-count'>
+          <div className="question-section">
+            <div className="question-count">
               <span>Question {currentQuestion + 1}</span>/{questions.length}
             </div>
-            <div className='question-text'>{questions[currentQuestion].questionText}</div>
+            <div className="question-text">{questions[currentQuestion].questionText}</div>
           </div>
-          <div className='answer-section'>
+          <div className="answer-section">
             {questions[currentQuestion].options.map((option) => (
-              <button onClick={() => handleAnswerOptionClick(option)} key={option}>
+              <button
+                onClick={() => handleAnswerOptionClick(option === questions[currentQuestion].correctAnswer)}
+              >
                 {option}
               </button>
             ))}
@@ -447,6 +421,6 @@ function App() {
       )}
     </div>
   );
-}
+};
 
 export default App;
