@@ -1,20 +1,21 @@
-// App.js
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './HomePage';
-import StudentGrade from './Questionnaire';
+import Home from './components/Home';
+import About from './components/About'; // Exemple d'autre composant
 
-const App = () => {
+const Question = () => {
   return (
     <Router>
-      <div>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/student-grade" element={<StudentGrade />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* Ajoutez d'autres routes ici */}
+      </Routes>
     </Router>
   );
 };
 
-export default App;
+export default Question;
+
+

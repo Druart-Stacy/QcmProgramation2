@@ -1,17 +1,20 @@
-// HomePage.js
+// src/HomePage.js
 import React from 'react';
-import Button from './Button'; // Assurez-vous que le chemin est correct
+import useHistory  from './App';
 
 const HomePage = () => {
-  // Définir la fonction handleClick
-  const handleClick = () => {
-    alert('Bouton cliqué !');
+  const history = useHistory();
+
+  const startQuestionnaire = () => {
+    history.push('/questionnaire');
   };
 
   return (
-    <div>
-      <h1>Bienvenue sur la page d'accueil</h1>
-      <Button label="Cliquez ici" onClick={handleClick} />
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>Bienvenue sur notre site</h1>
+      <button onClick={startQuestionnaire} style={{ padding: '10px 20px', fontSize: '16px' }}>
+        Commencer le questionnaire
+      </button>
     </div>
   );
 };
