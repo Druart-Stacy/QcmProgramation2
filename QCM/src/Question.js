@@ -7,9 +7,9 @@ const Question = ({ question, options, onAnswer }) => {
     <div className="question-container">
       <h2>{question}</h2>
       {options.map((option, index) => (
-        <button key={index} onClick={() => onAnswer(option)}>
-          {option}
-        </button>
+        <a key={index} onClick={() => onAnswer(option)}>
+          <h3>{option}</h3>
+        </a>
       ))}
     </div>
   );

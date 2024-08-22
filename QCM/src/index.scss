@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
+body{
+  background-image: url(./img/serveur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .app {
   display: flex;
   flex-direction: column;
@@ -6,6 +13,13 @@
   min-height: 100vh;
   background-color: #f0f0f0; /* Couleur de fond de la page */
 }
+h2{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    font-size: 50px; 
+}
 
 .question-section, .answer-section, .score-section {
   background: rgba(255, 255, 255, 0.9); /* Fond blanc transparent */
@@ -13,8 +27,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour le conteneur */
   text-align: center; /* Centrer le texte */
-  max-width: 600px; /* Largeur maximale pour les conteneurs */
-  width: 100%;
+  
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .question-count {
@@ -26,6 +41,9 @@
   font-size: 24px;
   margin-bottom: 20px;
 }
+
+
+
 
 .answer-section button {
   display: block;
@@ -49,3 +67,48 @@
   height: auto;
   margin-top: 20px;
 }
+/* Question.css */
+.question-container {
+  background-color: rgba($color: #fafafb, $alpha: 0.9);
+  text-align: center; /* Centre le texte et les boutons */
+  margin-left: 20%;
+  margin-right: 20%;
+  a{
+    display: flex;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+ 
+    flex-direction: column; /* Aligne les boutons en colonne */
+    align-items: center; /* Centre les boutons horizontalement */
+    gap: 10px; /* Espacement entre les boutons */
+    padding: 10px 20px; /* Ajuste le padding des boutons */
+    margin: 0; /* Assure qu'il n'y a pas de margin par défaut */
+    border-radius: 5px; /* Ajoute des coins arrondis */
+    
+    color: rgb(2, 2, 2); /* Couleur du texte des boutons */
+    cursor: pointer; /* Change le curseur pour pointer */
+    font-size: 25px; /* Ajuste la taille du texte */
+    
+  
+  }
+  a:hover {
+    background-color: rgb(0, 251, 255 ,0.5);
+  }
+
+}
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+// button {
+
+//   display: flex;
+//   
+// }
+

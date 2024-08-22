@@ -3,9 +3,12 @@ Un questionnaire de 50 questions couvrant différents langages de programmation 
 
 ## Prérequis :
 
-Node.js 
-npm 
+Node.js
+npm
 Clonez le dépôt avec la commande suivante :
+
+bash:
+
 git clone git@github.com:Druart-Stacy/QcmProgramation2.git
 cd QcmProgramation2
 
@@ -13,11 +16,12 @@ cd QcmProgramation2
 Assurez-vous d'avoir Node.js et npm installés, puis exécutez :
 npm install
 demarrer l'aplication
+cd QCM
 npm start
 
 L'application sera disponible à l'adresse http://localhost:3000.
 
-Structure du Code
+## Structure du Code
 src/App.js : Composant principal qui gère la logique du quiz et l'affichage des questions.
 src/Question.js : Composant de présentation pour afficher une question et ses options.
 src/App.css : Fichier de styles CSS pour le composant App.
@@ -52,25 +56,6 @@ CSS
 SASS
 REACT (framework)
 
-## Utilisation:
-
-### Pour ouvrir le projet :
-
-Lancez la commande suivante pour démarrer le projet :
-npm start
-Exécute l’application en mode développement.
-Ouvrez [http://localhost:3000](http://localhost:3000) pour l’afficher dans votre navigateur.
-
-test npm
-
-Lance l’exécuteur de tests en mode montre interactive.
-Pour plus d’informations, consultez la section sur [l’exécution de tests]
-
-La page se recharge lorsque vous apportez des modifications.
-Vous pouvez également voir des erreurs lint dans la console.
-
-Pour plus d'informations,
-(https://facebook.github.io/create-react-app/docs/running-tests)
 
 ## Contact :
 
