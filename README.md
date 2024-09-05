@@ -17,8 +17,8 @@ Assurez-vous d'avoir Node.js et npm installés, puis exécutez :
 npm install
 demarrer l'aplication
 cd QCM
+npm install web-vitals
 npm start
-
 L'application sera disponible à l'adresse http://localhost:3000.
 
 ## Structure du Code
