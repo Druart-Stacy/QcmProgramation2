@@ -45,16 +45,16 @@ Score final affiché sur 50.
 
 ## Deuxième version :
 
-Page de questions avec un choix parmi 3 propositions.
-Score final affiché sur 50.
-randomisation des questions.
+encore de preparation 
+qui va insclure la randomisation des questions
+et afficher la bonne réponse à chaque questions à la fin du qcm
 
 ## Langages et framework utilisés :
 
 HTML
 CSS
 SASS
-REACT (framework)
+REACT.js (framework)
 
 
 ## Contact :
