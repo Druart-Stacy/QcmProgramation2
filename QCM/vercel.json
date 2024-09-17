@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/qcm",
+        "permanent": true
+      }
+    ]
+  }
+  
