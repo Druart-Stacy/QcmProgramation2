@@ -12,7 +12,7 @@ bash:
 git clone git@github.com:Druart-Stacy/QcmProgramation2.git
 cd QcmProgramation2
 
-## instalation du projet
+## Installation du projet
 Assurez-vous d'avoir Node.js et npm installés, puis exécutez :
 npm install
 demarrer l'aplication
