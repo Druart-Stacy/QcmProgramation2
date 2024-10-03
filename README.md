@@ -1,5 +1,5 @@
 # Questionnaire :
-Un questionnaire de 50 questions couvrant différents langages de programmation web (PHP, SQL, JS, HTML, CSS, SASS).
+Un questionnaire de 70 questions couvrant différents langages de programmation web (PHP, SQL, JS, HTML, CSS, SASS).
 
 ## Prérequis :
 
@@ -41,7 +41,7 @@ Soumettre une pull request.
 ## Première version :
 
 une question par page avec un choix parmi 3 propositions.
-Score final affiché sur 50.
+Score final affiché sur 70.
 
 ## Deuxième version :
 
