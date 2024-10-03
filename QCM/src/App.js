@@ -330,7 +330,16 @@ const questions = [
         "B. Le middleware dans un framework backend est une fonction qui peut modifier les objets request et response, exécuter du code, et passer au middleware suivant ou terminer la requête.",
         "C. Le middleware dans un framework backend est un mécanisme pour optimiser les performances du serveur en réduisant le temps de réponse."
       ],
-      "correctAnswer": "B. Le middleware dans un framework backend est une fonction qui peut modifier les objets request et response, exécuter du code, et passer au middleware suivant ou terminer la requête."
+      correctAnswer: "B. Le middleware dans un framework backend est une fonction qui peut modifier les objets request et response, exécuter du code, et passer au middleware suivant ou terminer la requête."
+    },
+    {
+      "questionText": "Quelle est la différence principale entre HTML et HTML5 ?",
+      "options": [
+        "A. HTML5 permet d'intégrer des API comme la géolocalisation et le stockage local, ce qui n'était pas possible avec HTML.",
+        "B. HTML5 est juste une version plus rapide de HTML.",
+        "C. HTML5 ne prend pas en charge les images et les vidéos contrairement à HTML."
+      ],
+      correctAnswer: "A. HTML5 permet d'intégrer des API comme la géolocalisation et le stockage local, ce qui n'était pas possible avec HTML."
     },
     {
       "questionText": "Qu'est-ce que la 'sécurité des API' et quelles sont les meilleures pratiques ?",
@@ -339,9 +348,107 @@ const questions = [
         "B. La sécurité des API protège contre les accès non autorisés en utilisant l'authentification, le chiffrement (TLS), et la validation des entrées.",
         "C. La sécurité des API se concentre principalement sur la gestion des erreurs, sans considérer l'authentification ou le chiffrement."
       ],
-      "correctAnswer": "B. La sécurité des API protège contre les accès non autorisés en utilisant l'authentification, le chiffrement (TLS), et la validation des entrées."
-    }
-  
+      correctAnswer: "B. La sécurité des API protège contre les accès non autorisés en utilisant l'authentification, le chiffrement (TLS), et la validation des entrées."
+    },
+    {
+      "questionText": "Qu'est-ce que le modèle MVC en développement web ?",
+      "options": [
+        "A. Modèle-Vue-Contrôleur, une architecture permettant de séparer les données, la logique métier, et l'interface utilisateur.",
+        "B. Modèle-Vue-Cache, un système utilisé pour améliorer les performances de l'application.",
+        "C. Modèle-Vue-Contrôleur, une approche pour améliorer la sécurité des applications web."
+      ],
+      correctAnswer: "A. Modèle-Vue-Contrôleur, une architecture permettant de séparer les données, la logique métier, et l'interface utilisateur."
+    },
+    {
+      "questionText": "Qu'est-ce qu'une promesse (Promise) en JavaScript ?",
+      "options": [
+        "A. Une promesse est une fonction qui gère les opérations synchrones.",
+        "B. Une promesse est un objet qui représente l'achèvement ou l'échec d'une opération asynchrone.",
+        "C. Une promesse est un mécanisme pour optimiser la mémoire en JavaScript."
+      ],
+      correctAnswer: "B. Une promesse est un objet qui représente l'achèvement ou l'échec d'une opération asynchrone."
+    },
+    {
+      "questionText": "À quoi sert le fichier 'package.json' dans un projet Node.js ?",
+      "options": [
+        "A. Il sert à lister les dépendances et les scripts du projet.",
+        "B. Il sert à configurer la base de données utilisée par le projet.",
+        "C. Il sert à documenter le code du projet."
+      ],
+      correctAnswer: "A. Il sert à lister les dépendances et les scripts du projet."
+    },
+    {
+      "questionText": "Que signifie l'acronyme CSS ?",
+      "options": [
+        "A. Central Style Sheets",
+        "B. Cascading Style Sheets",
+        "C. Code Styling Sheets"
+      ],
+      correctAnswer: "B. Cascading Style Sheets"
+    },
+    {
+      "questionText": "Qu'est-ce qu'une API RESTful ?",
+      "options": [
+        "A. Une API qui suit les principes de l'architecture REST (Representational State Transfer).",
+        "B. Une API conçue uniquement pour les bases de données relationnelles.",
+        "C. Une API utilisée exclusivement pour créer des applications mobiles."
+      ],
+      correctAnswer: "A. Une API qui suit les principes de l'architecture REST (Representational State Transfer)."
+    },
+    {
+      "questionText": "Que fait la méthode 'fetch()' en JavaScript ?",
+      "options": [
+        "A. Elle est utilisée pour exécuter du code côté serveur.",
+        "B. Elle permet de faire des requêtes HTTP asynchrones pour obtenir des ressources sur le réseau.",
+        "C. Elle est utilisée pour gérer les animations dans le DOM."
+      ],
+      correctAnswer: "B. Elle permet de faire des requêtes HTTP asynchrones pour obtenir des ressources sur le réseau."
+    },
+    {
+      "questionText": "Que signifie l'acronyme SQL ?",
+      "options": [
+        "A. Simple Query Language",
+        "B. Structured Query Language",
+        "C. Server Query Language"
+      ],
+      correctAnswer: "B. Structured Query Language"
+    },
+    {
+      "questionText": "Que signifie le terme 'responsive design' ?",
+      "options": [
+        "A. Un design qui adapte automatiquement le contenu d'une page web à la taille de l'écran de l'utilisateur.",
+        "B. Un design uniquement compatible avec les navigateurs modernes.",
+        "C. Un design utilisé pour accélérer le chargement des pages web."
+      ],
+      "correctAnswer": "A. Un design qui adapte automatiquement le contenu d'une page web à la taille de l'écran de l'utilisateur."
+    },
+    {
+      "questionText": "Qu'est-ce qu'un 'token' dans l'authentification web ?",
+      "options": [
+        "A. Un token est un cookie sécurisé utilisé pour identifier un utilisateur.",
+        "B. Un token est un objet généré qui permet d'authentifier un utilisateur et de valider son identité dans un système sécurisé.",
+        "C. Un token est un fichier contenant les identifiants d'un utilisateur."
+      ],
+      "correctAnswer": "B. Un token est un objet généré qui permet d'authentifier un utilisateur et de valider son identité dans un système sécurisé."
+    },
+    {
+      "questionText": "Quel est le rôle de Node.js dans la programmation web ?",
+      "options": [
+        "A. Node.js est un framework frontend pour créer des applications web.",
+        "B. Node.js est un environnement d'exécution JavaScript qui permet de créer des applications côté serveur.",
+        "C. Node.js est une bibliothèque utilisée pour gérer les animations sur le web."
+      ],
+      "correctAnswer": "B. Node.js est un environnement d'exécution JavaScript qui permet de créer des applications côté serveur."
+    },
+    {
+      "questionText": "Qu'est-ce que l'ORM en développement web ?",
+      "options": [
+        "A. ORM (Object Relational Mapping) est un outil qui permet de mapper les objets d'une application avec les tables d'une base de données relationnelle.",
+        "B. ORM est un mécanisme pour gérer les authentifications des utilisateurs dans une application.",
+        "C. ORM est une bibliothèque pour optimiser la sécurité des transactions dans une base de données."
+      ],
+      "correctAnswer": "A. ORM (Object Relational Mapping) est un outil qui permet de mapper les objets d'une application avec les tables d'une base de données relationnelle."
+    },
 
     ];
     
