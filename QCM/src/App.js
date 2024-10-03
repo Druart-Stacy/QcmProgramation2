@@ -324,8 +324,8 @@ const questions = [
       correctAnswer: "C. Le Content Security Policy (CSP) est une norme de sécurité qui aide à prévenir les attaques de type XSS (Cross-Site Scripting) en définissant des règles sur les sources autorisées pour les contenus (scripts, images, etc.) chargés sur une page web."
     },
     {
-      "questionText": "Qu'est-ce que le 'middleware' dans un framework backend comme Express.js ?",
-      "options": [
+      questionText: "Qu'est-ce que le 'middleware' dans un framework backend comme Express.js ?",
+      options: [
         "A. Le middleware dans un framework backend est une fonctionnalité qui permet de gérer les bases de données de manière plus efficace.",
         "B. Le middleware dans un framework backend est une fonction qui peut modifier les objets request et response, exécuter du code, et passer au middleware suivant ou terminer la requête.",
         "C. Le middleware dans un framework backend est un mécanisme pour optimiser les performances du serveur en réduisant le temps de réponse."
@@ -333,8 +333,8 @@ const questions = [
       correctAnswer: "B. Le middleware dans un framework backend est une fonction qui peut modifier les objets request et response, exécuter du code, et passer au middleware suivant ou terminer la requête."
     },
     {
-      "questionText": "Quelle est la différence principale entre HTML et HTML5 ?",
-      "options": [
+      questionText: "Quelle est la différence principale entre HTML et HTML5 ?",
+      options: [
         "A. HTML5 permet d'intégrer des API comme la géolocalisation et le stockage local, ce qui n'était pas possible avec HTML.",
         "B. HTML5 est juste une version plus rapide de HTML.",
         "C. HTML5 ne prend pas en charge les images et les vidéos contrairement à HTML."
@@ -342,8 +342,8 @@ const questions = [
       correctAnswer: "A. HTML5 permet d'intégrer des API comme la géolocalisation et le stockage local, ce qui n'était pas possible avec HTML."
     },
     {
-      "questionText": "Qu'est-ce que la 'sécurité des API' et quelles sont les meilleures pratiques ?",
-      "options": [
+      questionText: "Qu'est-ce que la 'sécurité des API' et quelles sont les meilleures pratiques ?",
+      options: [
         "A. La sécurité des API implique uniquement de protéger les données en utilisant des techniques de chiffrement comme SSL/TLS.",
         "B. La sécurité des API protège contre les accès non autorisés en utilisant l'authentification, le chiffrement (TLS), et la validation des entrées.",
         "C. La sécurité des API se concentre principalement sur la gestion des erreurs, sans considérer l'authentification ou le chiffrement."
@@ -351,8 +351,8 @@ const questions = [
       correctAnswer: "B. La sécurité des API protège contre les accès non autorisés en utilisant l'authentification, le chiffrement (TLS), et la validation des entrées."
     },
     {
-      "questionText": "Qu'est-ce que le modèle MVC en développement web ?",
-      "options": [
+      questionText: "Qu'est-ce que le modèle MVC en développement web ?",
+      options: [
         "A. Modèle-Vue-Contrôleur, une architecture permettant de séparer les données, la logique métier, et l'interface utilisateur.",
         "B. Modèle-Vue-Cache, un système utilisé pour améliorer les performances de l'application.",
         "C. Modèle-Vue-Contrôleur, une approche pour améliorer la sécurité des applications web."
@@ -360,8 +360,8 @@ const questions = [
       correctAnswer: "A. Modèle-Vue-Contrôleur, une architecture permettant de séparer les données, la logique métier, et l'interface utilisateur."
     },
     {
-      "questionText": "Qu'est-ce qu'une promesse (Promise) en JavaScript ?",
-      "options": [
+      questionText: "Qu'est-ce qu'une promesse (Promise) en JavaScript ?",
+      options: [
         "A. Une promesse est une fonction qui gère les opérations synchrones.",
         "B. Une promesse est un objet qui représente l'achèvement ou l'échec d'une opération asynchrone.",
         "C. Une promesse est un mécanisme pour optimiser la mémoire en JavaScript."
@@ -369,8 +369,8 @@ const questions = [
       correctAnswer: "B. Une promesse est un objet qui représente l'achèvement ou l'échec d'une opération asynchrone."
     },
     {
-      "questionText": "À quoi sert le fichier 'package.json' dans un projet Node.js ?",
-      "options": [
+      questionText: "À quoi sert le fichier 'package.json' dans un projet Node.js ?",
+      options: [
         "A. Il sert à lister les dépendances et les scripts du projet.",
         "B. Il sert à configurer la base de données utilisée par le projet.",
         "C. Il sert à documenter le code du projet."
@@ -378,8 +378,8 @@ const questions = [
       correctAnswer: "A. Il sert à lister les dépendances et les scripts du projet."
     },
     {
-      "questionText": "Que signifie l'acronyme CSS ?",
-      "options": [
+      questionText: "Que signifie l'acronyme CSS ?",
+      options: [
         "A. Central Style Sheets",
         "B. Cascading Style Sheets",
         "C. Code Styling Sheets"
@@ -387,8 +387,8 @@ const questions = [
       correctAnswer: "B. Cascading Style Sheets"
     },
     {
-      "questionText": "Qu'est-ce qu'une API RESTful ?",
-      "options": [
+      questionText: "Qu'est-ce qu'une API RESTful ?",
+      options: [
         "A. Une API qui suit les principes de l'architecture REST (Representational State Transfer).",
         "B. Une API conçue uniquement pour les bases de données relationnelles.",
         "C. Une API utilisée exclusivement pour créer des applications mobiles."
@@ -396,8 +396,8 @@ const questions = [
       correctAnswer: "A. Une API qui suit les principes de l'architecture REST (Representational State Transfer)."
     },
     {
-      "questionText": "Que fait la méthode 'fetch()' en JavaScript ?",
-      "options": [
+      questionText: "Que fait la méthode 'fetch()' en JavaScript ?",
+      options: [
         "A. Elle est utilisée pour exécuter du code côté serveur.",
         "B. Elle permet de faire des requêtes HTTP asynchrones pour obtenir des ressources sur le réseau.",
         "C. Elle est utilisée pour gérer les animations dans le DOM."
@@ -405,8 +405,8 @@ const questions = [
       correctAnswer: "B. Elle permet de faire des requêtes HTTP asynchrones pour obtenir des ressources sur le réseau."
     },
     {
-      "questionText": "Que signifie l'acronyme SQL ?",
-      "options": [
+      questionText: "Que signifie l'acronyme SQL ?",
+      options: [
         "A. Simple Query Language",
         "B. Structured Query Language",
         "C. Server Query Language"
@@ -414,41 +414,150 @@ const questions = [
       correctAnswer: "B. Structured Query Language"
     },
     {
-      "questionText": "Que signifie le terme 'responsive design' ?",
-      "options": [
+      questionText: "Que signifie le terme 'responsive design' ?",
+      options: [
         "A. Un design qui adapte automatiquement le contenu d'une page web à la taille de l'écran de l'utilisateur.",
         "B. Un design uniquement compatible avec les navigateurs modernes.",
         "C. Un design utilisé pour accélérer le chargement des pages web."
       ],
-      "correctAnswer": "A. Un design qui adapte automatiquement le contenu d'une page web à la taille de l'écran de l'utilisateur."
+      correctAnswer: "A. Un design qui adapte automatiquement le contenu d'une page web à la taille de l'écran de l'utilisateur."
     },
     {
-      "questionText": "Qu'est-ce qu'un 'token' dans l'authentification web ?",
-      "options": [
+      questionText: "Qu'est-ce qu'un 'token' dans l'authentification web ?",
+      options: [
         "A. Un token est un cookie sécurisé utilisé pour identifier un utilisateur.",
         "B. Un token est un objet généré qui permet d'authentifier un utilisateur et de valider son identité dans un système sécurisé.",
         "C. Un token est un fichier contenant les identifiants d'un utilisateur."
       ],
-      "correctAnswer": "B. Un token est un objet généré qui permet d'authentifier un utilisateur et de valider son identité dans un système sécurisé."
+      correctAnswer: "B. Un token est un objet généré qui permet d'authentifier un utilisateur et de valider son identité dans un système sécurisé."
     },
     {
-      "questionText": "Quel est le rôle de Node.js dans la programmation web ?",
-      "options": [
+      questionText: "Quel est le rôle de Node.js dans la programmation web ?",
+      options: [
         "A. Node.js est un framework frontend pour créer des applications web.",
         "B. Node.js est un environnement d'exécution JavaScript qui permet de créer des applications côté serveur.",
         "C. Node.js est une bibliothèque utilisée pour gérer les animations sur le web."
       ],
-      "correctAnswer": "B. Node.js est un environnement d'exécution JavaScript qui permet de créer des applications côté serveur."
+      correctAnswer: "B. Node.js est un environnement d'exécution JavaScript qui permet de créer des applications côté serveur."
     },
     {
-      "questionText": "Qu'est-ce que l'ORM en développement web ?",
-      "options": [
+      questionText: "Qu'est-ce que l'ORM en développement web ?",
+      options: [
         "A. ORM (Object Relational Mapping) est un outil qui permet de mapper les objets d'une application avec les tables d'une base de données relationnelle.",
         "B. ORM est un mécanisme pour gérer les authentifications des utilisateurs dans une application.",
         "C. ORM est une bibliothèque pour optimiser la sécurité des transactions dans une base de données."
       ],
-      "correctAnswer": "A. ORM (Object Relational Mapping) est un outil qui permet de mapper les objets d'une application avec les tables d'une base de données relationnelle."
+      correctAnswer: "A. ORM (Object Relational Mapping) est un outil qui permet de mapper les objets d'une application avec les tables d'une base de données relationnelle."
     },
+    {
+      questionText: "Qu'est-ce que Webpack en développement web ?",
+      options: [
+        "A. Un gestionnaire de versions pour les projets frontend.",
+        "B. Un module bundler qui permet de compiler des fichiers JavaScript et d'autres ressources pour les navigateurs.",
+        "C. Un outil pour tester la performance des applications web."
+      ],
+      correctAnswer: "B. Un module bundler qui permet de compiler des fichiers JavaScript et d'autres ressources pour les navigateurs."
+    },
+    {
+      questionText: "À quoi sert la méthode 'map()' en JavaScript ?",
+      options: [
+        "A. Elle transforme chaque élément d'un tableau en fonction d'une fonction donnée et retourne un nouveau tableau.",
+        "B. Elle modifie un tableau en place en supprimant les éléments inutiles.",
+        "C. Elle permet de rechercher un élément dans un tableau et de le supprimer."
+      ],
+      correctAnswer: "A. Elle transforme chaque élément d'un tableau en fonction d'une fonction donnée et retourne un nouveau tableau."
+    },
+    {
+      questionText: "Que permet de faire la méthode 'push()' en JavaScript ?",
+      options: [
+        "A. Elle ajoute un élément au début d'un tableau.",
+        "B. Elle supprime le dernier élément d'un tableau.",
+        "C. Elle ajoute un ou plusieurs éléments à la fin d'un tableau."
+      ],
+      correctAnswer: "C. Elle ajoute un ou plusieurs éléments à la fin d'un tableau."
+    },
+    {
+      questionText: "Qu'est-ce que l'asynchronisme en JavaScript ?",
+      options: [
+        "A. Un modèle de programmation où les opérations sont exécutées de manière séquentielle.",
+        "B. Un modèle de programmation où certaines opérations peuvent être exécutées sans bloquer l'exécution du reste du code.",
+        "C. Un mécanisme qui force JavaScript à attendre l'exécution d'une tâche avant de passer à la suivante."
+      ],
+      correctAnswer: "B. Un modèle de programmation où certaines opérations peuvent être exécutées sans bloquer l'exécution du reste du code."
+    },
+    {
+      questionText: "Qu'est-ce que React.js ?",
+      options: [
+        "A. Un framework backend utilisé pour créer des serveurs web.",
+        "B. Une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur interactives.",
+        "C. Un outil de gestion des bases de données NoSQL."
+      ],
+      correctAnswer: "B. Une bibliothèque JavaScript utilisée pour construire des interfaces utilisateur interactives."
+    },
+    {
+      questionText: "Quelle est la fonction du tag 'meta' dans une page HTML ?",
+      options: [
+        "A. Définir la structure principale de la page web.",
+        "B. Fournir des informations supplémentaires sur le document, comme l'encodage, l'auteur, ou la description.",
+        "C. Insérer des scripts JavaScript dans le document HTML."
+      ],
+      correctAnswer: "B. Fournir des informations supplémentaires sur le document, comme l'encodage, l'auteur, ou la description."
+    },
+    {
+      questionText: "Qu'est-ce qu'un 'cookie' en développement web ?",
+      options: [
+        "A. Un fichier stocké sur le serveur contenant les données des sessions utilisateur.",
+        "B. Un petit fichier stocké sur le navigateur de l'utilisateur contenant des données relatives à la session ou à l'utilisateur.",
+        "C. Un fichier utilisé pour améliorer la performance des applications web."
+      ],
+      correctAnswer: "B. Un petit fichier stocké sur le navigateur de l'utilisateur contenant des données relatives à la session ou à l'utilisateur."
+    },
+    {
+      questionText: "Que signifie 'hoisting' en JavaScript ?",
+      options: [
+        "A. Le déplacement automatique des déclarations de variables et de fonctions en haut de leur contexte d'exécution.",
+        "B. L'optimisation de la performance des requêtes HTTP dans le navigateur.",
+        "C. Une technique utilisée pour optimiser l'usage de la mémoire dans une application JavaScript."
+      ],
+      correctAnswer: "A. Le déplacement automatique des déclarations de variables et de fonctions en haut de leur contexte d'exécution."
+    },
+    {
+      questionText: "Qu'est-ce que le protocole WebSocket ?",
+      options: [
+        "A. Un protocole HTTP utilisé pour récupérer des données de manière asynchrone.",
+        "B. Un protocole permettant une communication bidirectionnelle en temps réel entre un client et un serveur.",
+        "C. Un protocole pour transférer des fichiers volumineux sur le web."
+      ],
+      correctAnswer: "B. Un protocole permettant une communication bidirectionnelle en temps réel entre un client et un serveur."
+    },
+    {
+      questionText: "Que signifie l'acronyme API ?",
+      options: [
+        "A. Application Programming Interface.",
+        "B. Automated Process Integration.",
+        "C. Advanced Programming Interaction."
+      ],
+      correctAnswer: "A. Application Programming Interface."
+    },
+    {
+      questionText: "Qu'est-ce que 'CORS' en développement web ?",
+      options: [
+        "A. Une méthode pour compresser les fichiers avant de les envoyer au client.",
+        "B. Une politique de sécurité qui empêche un navigateur de charger des ressources depuis un autre domaine sans autorisation.",
+        "C. Un système de cache pour améliorer la performance des requêtes HTTP."
+      ],
+      correctAnswer: "B. Une politique de sécurité qui empêche un navigateur de charger des ressources depuis un autre domaine sans autorisation."
+    },
+    {
+      questionText: "Quelle est la fonction du tag '<script>' en HTML ?",
+      options: [
+        "A. Il est utilisé pour inclure du CSS dans une page HTML.",
+        "B. Il est utilisé pour inclure ou exécuter des scripts JavaScript dans une page HTML.",
+        "C. Il est utilisé pour inclure des images dans une page HTML."
+      ],
+      correctAnswer: "B. Il est utilisé pour inclure ou exécuter des scripts JavaScript dans une page HTML."
+    }
+
 
     ];
     
