@@ -1,5 +1,5 @@
 # Questionnaire :
-Un questionnaire de 70 questions couvrant différents langages de programmation web (PHP, SQL, JS, HTML, CSS, SASS).
+Un questionnaire de 70 questions couvrant différents langages de programmation web (PHP, SQL, JS, HTML, CSS, SASS ,java principalement).
 
 ## Prérequis :
 
