@@ -1,15 +1,13 @@
 // App.js
 import React, { useState } from 'react';
-import Question from './Question';
+// import Question from './Question';
 import './App.css';
 import tristeImage from './img/larmeleon.png';
-import felicitationImage from './img/mackognieur.png';
+// import felicitationImage from './img/mackognieur.png';
 import legendeImage from './img/arceus.jpg';
 import bonnemoyenneImage from './img/porigon2.jpg';
 
 // Définition des questions du quiz
- 
-// Questions
 const questions = [
   {
     questionText: "Qu’ est-ce que JavaScript?",
@@ -557,28 +555,20 @@ const questions = [
       ],
       correctAnswer: "B. Il est utilisé pour inclure ou exécuter des scripts JavaScript dans une page HTML."
     }
-
-
     ];
     
-
-
-
-
-
-
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
 
   const handleAnswerOptionClick = (selectedAnswer) => {
-    const isCorrect = selectedAnswer === questions[currentQuestion].correctAnswer;
-
+  const isCorrect = selectedAnswer === questions[currentQuestion].correctAnswer;
+// si la réponse est correct faire +1 
     if (isCorrect) {
       setScore(score + 1);
     }
-
+// passer à la question suivante si la question actuel est rempli
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion);
@@ -588,42 +578,110 @@ function App() {
   };
 
   return (
-    <div className="app">
+    <div className='app'>
       {showResult ? (
-        <div className="result-section">
-          <h2>Votre score : {score} sur {questions.length}</h2>
+        // Section des résultats
+        <div className='card mt-4'>
+          <h2 className='text-center'>
+          Votre score est de :
+            <span className='d-block fs-3 '></span>
+             {score} sur {questions.length}
+          </h2>
           {score === questions.length && (
-            <img src={legendeImage} alt="Légende" />
+            <img src={legendeImage} className='img-fluid' alt="Légende" />
           )}
           {score > questions.length / 2 && score < questions.length && (
-            <img src={bonnemoyenneImage} alt="Bonne moyenne" />
+            <img src={bonnemoyenneImage} className='img-fluid' alt="Bonne moyenne" />
           )}
           {score <= questions.length / 2 && (
-            <img src={tristeImage} alt="Triste" />
+            <img src={tristeImage} className='img-fluid' alt="Triste" />
           )}
         </div>
       ) : (
-        <div className="question-section">
-          <div className="question-count">
-            <span>Question {currentQuestion + 1}</span>/{questions.length}
-          </div>
-          <div className="question-text">
-            {questions[currentQuestion].questionText}
-          </div>
-          <div className="answer-section">
-            {questions[currentQuestion].options.map((option, index) => (
-              <button
-                key={index}
-                onClick={() => handleAnswerOptionClick(option)}
-              >
-                {option}
-              </button>
-            ))}
+        // Section des questions
+        <div className='card mt-8'>
+          {/* question-section */}
+          <div className='display-3'>
+            {/* question-count */}
+            <div className='display-3'>
+              <span>Question {currentQuestion + 1}</span>/{questions.length}
+            </div>
+            {/* question-text */}
+            <div className='dispaly-3'>
+              {questions[currentQuestion].questionText}
+              
+            </div>
+            {/* question-section */}
+            <div className="">
+              {/* question-count */}
+      {/* <div className="">
+         <span>Question {currentQuestion + 1}</span>/{questions.length}
+        </div> */}
+        {/* question-text */}
+       {/* <div className="">
+        {questions[currentQuestion].questionText}
+       </div> */}
+       {/* answer-section */}
+       </div>
+        <div className="card mt-4">
+         {questions[currentQuestion].options.map((option, index) => (
+          // navbar-toggler
+           <button className='mb-2 w-100'
+
+             key={index}
+            onClick={() => handleAnswerOptionClick(option)}
+         >
+            {option}
+          </button>
+           ))}
           </div>
         </div>
+            
+          </div>
+          
+        
       )}
     </div>
   );
 }
 
 export default App;
+
+
+    // <div className="app">
+    //   {showResult ? (
+    //     <div className="result-section">
+    //       <h2>Votre score : {score} sur {questions.length}</h2>
+    //       {score === questions.length && (
+    //         <img src={legendeImage} alt="Légende" />
+    //       )}
+    //       {score > questions.length / 2 && score < questions.length && (
+    //         <img src={bonnemoyenneImage} alt="Bonne moyenne" />
+    //       )}
+    //       {score <= questions.length / 2 && (
+    //         <img src={tristeImage} alt="Triste" />
+    //       )}
+    //     </div>
+    //   ) : (
+    //     <div className="question-section">
+    //       <div className="question-count">
+    //         <span>Question {currentQuestion + 1}</span>/{questions.length}
+    //       </div>
+    //       <div className="question-text">
+    //         {questions[currentQuestion].questionText}
+    //       </div>
+    //       <div className="answer-section">
+    //         {questions[currentQuestion].options.map((option, index) => (
+    //           <button
+    //             key={index}
+    //             onClick={() => handleAnswerOptionClick(option)}
+    //           >
+    //             {option}
+    //           </button>
+    //         ))}
+    //       </div>
+    //     </div>
+    //   )}
+    // </div>
+//   );
+// }

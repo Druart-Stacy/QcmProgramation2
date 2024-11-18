@@ -11,10 +11,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
-  max-width:80vh ;
-  background-color: rgba(255, 255, 255, 0.8);/* Couleur de fond de la page */
-  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Couleur de fond de la page */
 }
 
 h2 {
@@ -43,19 +41,6 @@ h2 {
 .question-text {
   font-size: 24px;
   margin-bottom: 20px;
-}
-
-.answer-section button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff; /* Couleur des boutons */
-  color: white;
-  cursor: pointer;
 }
 
 .answer-section button:hover {
