@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kalam:wght@300;400;700&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap');
 body{
   background-image: url(./img/serveur.jpg);
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-size: cover;
-
+  background-attachment: fixed;
 }
 .app {
   display: flex;

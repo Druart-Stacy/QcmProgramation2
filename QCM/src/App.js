@@ -576,7 +576,10 @@ function App() {
   };
 
   return (
-    <div className='app'>
+    <div>
+    {/* <div className='app bg-info bg-image-container d-flex justify-content-center'>  */}
+       <body className='bg-image-container d-flex justify-content-center align-items-center" style="height: 100vh;'>
+     
       {showResult ? (
         // Section des résultats
         <div className='card mt-4'>
@@ -639,7 +642,10 @@ function App() {
           
         
       )}
+      {/* </body> */}
+      </body>
     </div>
+    
   );
 }
 
