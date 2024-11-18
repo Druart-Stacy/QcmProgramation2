@@ -1,9 +1,7 @@
 // App.js
 import React, { useState } from 'react';
-// import Question from './Question';
 import './App.css';
 import tristeImage from './img/larmeleon.png';
-// import felicitationImage from './img/mackognieur.png';
 import legendeImage from './img/arceus.jpg';
 import bonnemoyenneImage from './img/porigon2.jpg';
 
@@ -599,7 +597,7 @@ function App() {
         </div>
       ) : (
         // Section des questions
-        <div className='card mt-8'>
+        <div className='card mt-8 my-4 p-5 bg-body rounded shadow-sm'>
           {/* question-section */}
           <div className='display-3'>
             {/* question-count */}
@@ -626,7 +624,7 @@ function App() {
         <div className="card mt-4">
          {questions[currentQuestion].options.map((option, index) => (
           // navbar-toggler
-           <button className='mb-2 w-100'
+           <button className='mb-2 w-100 btn btn-secondary'
 
              key={index}
             onClick={() => handleAnswerOptionClick(option)}
